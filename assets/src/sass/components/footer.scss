@@ -1,0 +1,26 @@
+.footer{
+    &__credits {
+        box-shadow: 0 3px 6px rgba(235, 176, 180, 0.3);
+        background: linear-gradient(to right,#f3a183,#ec6f66);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: column;
+        min-height: 100px;
+        border-radius: 20px 20px 0 0;
+        font-size: 3rem;
+        max-width: 300px;
+    }
+    a {
+        color:$white;
+    }
+    .row {  
+        border-top-left-radius: 50px;
+        border-top-right-radius: 50px;
+        justify-content: center;
+    }
+    .icon {
+        font-size: 1.7rem;
+    }
+ 
+}

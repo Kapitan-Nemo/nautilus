@@ -1,0 +1,108 @@
+*:focus {outline:none !important}
+
+html{
+    font-size: 16px;
+}
+
+body{
+    font-family:$primary-font;
+}
+
+main {
+    padding: 3rem 0 3rem 0;
+    @include max-xl {
+        padding: 8rem 0 0 0;
+    }
+}
+
+strong, b {
+    font-variation-settings: "wght" 500;
+    color:$primary;
+}
+
+section {
+    margin: 0 0 3rem 0;
+}
+
+a {
+    text-decoration: none;
+    &:focus {
+        outline:none !important
+    }
+}
+
+select, input {
+    border: none;
+    border-bottom: solid 1px $secondary;
+    color:$secondary;
+    padding: 10px 0 10px 0;
+    border-color: #cacaca;
+}
+
+    ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+        color: $white;
+        opacity: 1; /* Firefox */
+      }
+      
+      :-ms-input-placeholder { /* Internet Explorer 10-11 */
+        color:$white;
+      }
+      
+      ::-ms-input-placeholder { /* Microsoft Edge */
+        color:$white;
+    }
+
+.row {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.container-fluid {
+    padding-right: 60px;
+    padding-left: 60px;
+    max-width: 1600px;
+    @include max-xl {
+        padding-right: 30px;
+        padding-left: 30px;
+    }
+    @include max-sm {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+.img-radius {
+    border-radius: 1.25rem;
+}
+
+.p-relative {
+    position: relative;
+}
+
+.w-25 {
+    width: 25%;
+}
+
+.w-100 {
+    width:100%;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.overflow-hidden {
+    overflow: hidden;
+}
+
+.text-nowrap {
+    white-space: nowrap;
+}
+
+
+

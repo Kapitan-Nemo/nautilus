@@ -1,0 +1,14 @@
+.page404 {
+    &__container {
+        display: flex;
+        justify-content: center;
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        @include max-xl {
+            flex-flow: column;
+            text-align: center;
+        }
+    }
+}

@@ -1,0 +1,115 @@
+.slider {
+    background: #e1eaf4;
+    margin: 12rem 0 3rem 0;
+    @include max-lg {
+        margin: 9rem 0 3rem 0;
+    }
+    .container-fluid {
+        @include max-xl {
+            padding: 0 20px 0 20px;
+        }
+    }
+    &__category {
+        border-radius: 15px;
+    }
+
+    &__heading {
+        background-color: $white;
+        position: absolute;
+        bottom: 5%;
+        left: 50%;
+        -webkit-transform: translate(-50%,-50%);
+        -ms-transform: translate(-50%,-50%);
+        transform: translate(-50%,-50%);
+        border-radius: 10px;
+        flex: 1;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        padding: 10px 30px 10px 30px;
+        min-height: 2.875rem;
+        font-variation-settings: "wght" 300;
+        font-size: 1.2rem;
+        color: $black;
+        border:solid 5px #fbe8de;
+        background: #fbe8de;
+        font-variation-settings: 'wght' 500;
+        max-width: 400px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        transition: 0.3s ease-in;
+        &:hover {
+            transition: 0.3s ease-out;
+            background: #ec6f66;
+            color: white;
+            transform: translate(-50%,-70%);
+        }
+        i {
+            font-size: 1.25rem;
+            margin: 0rem 0 0 0.625rem;
+        }
+    }
+
+
+    &__buttons {
+        padding: 3rem 0 3rem 0;
+    }
+
+    &__photo {
+            height: 450px;
+            object-position: 50% 100%;
+            display: block;
+            width: 100%;
+            margin: 0 auto;
+            object-fit: cover;
+            img {
+                height: 450px;
+                object-position: 50% 100%;
+                display: block;
+                width: 100%;
+                margin: 0 auto;
+                object-fit: cover;
+                @include max-sm {
+                    height: 350px;
+                    padding: 0;
+                }
+            }
+            @include max-sm {
+                height: 350px;
+                padding: 0;
+            }
+    }
+    &__scribbble {
+        position: absolute;
+        top: 2px;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        @include max-xxl {
+            width: 100px;
+        }
+    }
+    .prev {
+        border-radius: 25%;
+        height: 55px;
+        width: 55px;
+        color: white;
+        font-size: 2.0rem;
+        border: 0;
+        box-shadow: 0 3px 6px rgba(235, 176, 180, 0.3);
+        background: $primary;
+        margin: 0 10px 0 0;
+      }
+    
+      .next {
+        border-radius: 25%;
+        height: 55px;
+        width: 55px;
+        color: white;
+        font-size: 2.0rem;
+        border: 0;
+        box-shadow: 0 3px 6px rgba(235, 176, 180, 0.3);
+        background: $primary;
+        margin: 0 0 0 10px;
+      }
+}

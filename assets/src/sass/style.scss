@@ -1,0 +1,20 @@
+/** Import bootstrap files **/
+@import 'bootstrap/bootstrap-grid.scss';
+@import 'bootstrap/bootstrap-reboot.scss';
+
+
+/** Import common files **/
+@import 'global/variables';
+@import 'global/fonts';
+@import 'global/mixins';
+@import 'global/layout';
+@import 'global/typography';
+@import 'global/buttons';
+
+
+/** Import component files **/
+@import 'components/*.scss';
+
+/** Import templates files **/
+@import 'templates/**/*.scss';
+

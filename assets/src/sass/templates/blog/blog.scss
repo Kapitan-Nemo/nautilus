@@ -1,0 +1,11 @@
+.blog-archive {
+    padding: 0 0 3rem 0;
+    .blog-cards .section-heading {
+        padding: 0rem 0 3rem 0;
+        pointer-events: none;
+    }
+    .blog-cards__scribbble {
+        top: 3rem;
+        pointer-events: none;
+    }
+}

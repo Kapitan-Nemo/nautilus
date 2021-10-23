@@ -1,0 +1,103 @@
+.blog-single {
+    .img-fluid {
+            img {
+                max-width: 100%;
+                height:auto;
+            }
+        }
+        .w-100 {
+            img {
+                width: 100%;
+            }
+        }
+        .img-radius { 
+            img {
+                border-radius: 1.25rem;
+            }
+        }
+    padding: 0 0 3rem 0;
+    h2 {
+        @include max-lg {
+            margin-top: 1rem;
+        }
+    }
+    &__content {
+        a, a:link {
+            color:$secondary;
+            text-decoration: none;
+            background-position-y: -0%;
+            background-image: linear-gradient( white 50%, $primary 50%);
+            transition: background 500ms ease;
+            background-size: 2px;
+            background-size: auto 175%;
+            font-variation-settings: "wght" 500;
+          }
+          a:hover {
+            background-position-y: 100%;
+            color:white;
+          }
+          p {
+            text-align: justify;
+        }
+    }
+    &__info {
+        padding-top: 1rem;
+        &__time {
+            color: #483d8b;
+            @include max-lg {
+                max-width: 65vw;
+            }
+        }
+        &__categories {
+            @include max-lg {
+                margin: 0;
+            }
+           a {
+            color: #fff;
+            background: #ec6f66;
+            padding: 10px 20px 10px 20px;
+            border-radius: .4375rem;
+           }
+            a span{
+                display: none;
+            }
+        }
+        @include max-sm {
+            padding-top: 1rem;
+            display: block!important;
+        }
+    }
+
+    &__image {
+        max-height: 400px;
+        min-width: 100%;
+        object-fit: cover;
+        border-radius: 0 25px 25px 0;
+        min-width: 94vw;
+        max-width: 94vw;
+        img {
+            max-height: 400px;
+            min-width: 100%;
+            object-fit: cover;
+            border-radius: 0 25px 25px 0;
+            min-width: 94vw;
+            max-width: 94vw;
+            @include max-lg {
+                min-width: 100vw;
+                max-width: 100vw;
+                border-radius: 0;
+            }
+        }
+        @include max-lg {
+            min-width: 100vw;
+            max-width: 100vw;
+            border-radius: 0;
+        }
+    }
+    &__heading {
+        line-height: 1.0;
+        @include max-lg {
+            font-size: 2.0rem;
+        }
+    } 
+}

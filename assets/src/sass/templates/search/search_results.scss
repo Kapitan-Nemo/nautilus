@@ -1,0 +1,9 @@
+.search-page {
+    @include max-xl {
+        flex-flow: column;
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    }
+}

@@ -1,0 +1,325 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.6s ease-out;
+
+    &__search {
+        height: 100%;
+        width: 100%;
+        display:flex;
+        position: fixed;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+        z-index: 1000;
+        opacity: 0;
+        top: 0;
+        left: 0;  
+        background-color: rgba(0,0,0, 0.9);
+        transition: 0.6s ease;
+        pointer-events: none;
+        &__active {
+            height: 100%;
+            width: 100%;
+            position: fixed;
+            flex-flow: column;
+            justify-content: center;
+            align-items: center;
+            background-color: rgba(0,0,0, 0.9);
+            top: 0;
+            left: 0;     
+            display:flex;
+            opacity: 1;
+            transition: 0.6s ease;
+            pointer-events: visible;
+            
+        }
+        form {
+            border-bottom: solid 8px #484d8b;
+            padding: 0 0 10px 0;
+        }
+        &__button {
+            font-size: 3rem;
+            border-radius: 50%;
+            border:none;
+            color: #484d8b;
+            @include max-xl {
+                font-size: 1.5rem;
+                min-height: 50px;
+                min-width: 50px;
+            }
+        }
+        &__close {
+            color: white;
+            position: absolute;
+            top: 0;
+            right: 3rem;
+            font-size: 8rem;
+            cursor: pointer;
+            @include max-xl {
+                right: 1rem; 
+                font-size: 5rem;
+            }
+        }
+        &__input {
+            width: 70vw;
+            background: transparent;
+            font-size: 3rem;
+            border:none;
+            color:$white;
+            @include max-xl {
+                font-size: 1.3rem;
+            }
+        }
+        &__result {
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            width: 75vw;
+            color: $primary;
+            transition: 0.6s ease-in;
+      
+            .active {
+                transition: 0.6s ease-out;
+                opacity:1; 
+            }
+            ul {
+                margin:0;
+                list-style-type: none;
+                padding: 25px 0 0 0;
+                opacity:0;
+                transition: 0.6s ease-in;
+                li {
+                    padding: 0 0 5px 0;
+                    font-size: 2rem;
+                    @include max-sm {
+                        padding: 0 0 25px 0;
+                        font-size: 1.4rem;
+                    }
+                    a {
+                        color: $primary;
+                    }
+                }
+            }
+        }
+    }
+
+    .cart-contents-count {
+        background-color: #a56e6e;
+        color: #fff;
+        width: 21px;
+        height: 21px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        position: absolute;
+        top: -12px;
+        right: 25px;
+        font-size: 14px;
+    }
+
+    &.container-fluid {
+        @include max-xl {
+            position: fixed;
+            z-index: 1000;
+            top: 30px;
+            width: 100%;
+            margin-right: auto;
+            margin-left: auto;
+            padding: 0px 30px 0 30px!important;
+            max-width: 100%;
+        }
+    }
+
+    &__nav {
+        position: relative;
+        @include min-xxl {
+            &:after {
+                content: "";
+                position: absolute;
+                left: -100px;
+                top: 0px;
+                width: 0;
+                height: 0;
+                border-top: 34px solid transparent;
+                border-right: 100px solid #f3a183;
+                border-bottom: 34px solid transparent;
+            }   
+        
+        }
+        a {
+            color:$white;
+            white-space: nowrap;
+        }
+        
+        list-style-type: none;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        padding: 0;
+        height: 4.25rem;
+        width: 45.4375rem;
+        border-radius: 0px 50px 50px 0px;
+        box-shadow: 0 3px 6px rgba(235, 176, 180, 0.3);
+        background: linear-gradient(to right,#f3a183,#ec6f66);
+
+        @include max-xl {
+            width: 100vw;
+            height: 65px;
+            box-shadow: 0 3px 6px rgba(235, 176, 180, 0.3);
+            justify-content: center;
+            border-radius: 50px;
+        }
+        
+    }
+
+    &__logo {
+        @media only screen and (max-width: 1200px) {
+            max-width: 200px;
+            padding: 0 0.9375rem 0 0;
+        }
+        @include max-xl {
+            display: none;
+        }
+    }
+
+    &__nav-item {
+        font-size: 1.25rem;
+        font-variation-settings: "wght" 500;
+        padding: 0 2.5rem 0 0;
+        @include max-xl {
+            font-size: 0;
+            display: none;
+        }
+        @include max-sm {
+            padding: 0 1.2rem 0 0;
+        }
+    }
+
+    &__nav-icon {
+        font-size: 0;
+        display: block;
+        a {    
+            &:before { 
+                color:$secondary;
+                border-radius: 50%;
+                box-shadow: 0 3px 6px rgba(235, 176, 180, 0.45);
+                background-color: $white;
+            } 
+        }
+        label {
+            cursor: pointer;
+            margin: 0;
+            display: inline;
+            &:before { 
+                color:$secondary;
+                border-radius: 50%;
+                box-shadow: 0 3px 6px rgba(235, 176, 180, 0.45);
+                background-color: $white;
+            } 
+        }
+    }
+
+    &__nav-icon-home {
+        font-size: 1.25rem;
+        font-variation-settings: "wght" 500;
+        //padding: 0 2.5rem 0 0;
+        @include max-xl {
+            font-size: 0;
+        }
+        a {    
+            &:before { 
+                content: '\e80c'; 
+                font-family: 'fontello'; 
+                font-size: 1.125rem;
+                padding: 0.375rem 0.5625rem 0.3125rem 0.5625rem;
+                display: none;
+                @include max-xl {
+                    display: block;
+                }
+            } 
+        }
+    }  
+
+    &__nav-icon-menu {
+        position: relative;
+        padding: 0 2.0rem 0 0;
+        label {            
+            &:before { 
+                content: '\e803'; 
+                font-family: 'fontello'; 
+                font-size: 0.8125rem;
+                padding: 0.8125rem 0.5625rem 0.8125rem 0.5625rem;
+            } 
+        }
+        @include min-xxl { 
+            display:none;
+        }
+        @include max-sm {
+            padding: 0 1.2rem 0 0;
+        }  
+    }  
+    &__nav-icon-search {
+        position: relative;
+        padding: 0;
+        @include min-xl {
+        padding: 0 2.0rem 0 0;
+        } 
+        label { 
+            &:before { 
+                content: '\e802'; 
+                font-family: 'fontello'; 
+                font-size: 1.25rem;
+                padding: 0.5625rem 0.5625rem 0.5625rem 0.5625rem;
+            } 
+        }
+    }
+    
+    #mobile-menu {
+        width: 100%;
+        
+        list-style: none;
+        position: absolute;
+        height: auto;
+        box-shadow: rgb(149 157 165 / 20%) 0 8px 24px;
+        border-radius: 0 0 70% 0;
+        display: flex;
+        flex-flow: column;
+        padding: 85px 50px 50px 50px;
+        left: 0;
+        top: -30px;
+        background-color: #F5F6FA;
+        -webkit-font-smoothing: antialiased;
+        transform-origin: 0% 0%;
+        transform: translate(-100%, 0);
+        transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+        &.active {
+            transform: none!important;     
+        }
+        @include min-xxl { 
+            display:none;
+        }
+        li {
+            font-size: 1.5rem;
+            padding: 0 0 30px 0;
+            font-variation-settings: 'wght' 600;
+        }
+        .icon-close {
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            font-size: 1.8rem;
+        }
+        img {
+            position: absolute;
+            width: 150px;
+            top: 150px;
+            right: 50px;
+        }
+    }
+}
+
+
+
