@@ -31,7 +31,7 @@
 
 
     <div class="navbar__search">
-        <span class="navbar__search__close" onclick="closeSearch()" title="Zamknij wyszukiwarkę">×</span>
+        <span class="navbar__search__close icon icon-close" onclick="closeSearch()" title="Zamknij wyszukiwarkę"></span>
         <form id="searchform" method="get" action="<?php echo esc_url( home_url( '/' ) ); ?>" autocomplete="off">
             <input type="text" name="s" placeholder="Wpisz czego szukasz..."  minlenght='3' class="navbar__search__input ajax-search" >
             <button class="navbar__search__button icon icon-search"></button>
