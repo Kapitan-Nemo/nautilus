@@ -2,9 +2,9 @@ function openSearch() {
     document.querySelector(".navbar__search").classList.add("navbar__search__active");
   }
   
-  function closeSearch() {
+function closeSearch() {
     document.querySelector(".navbar__search").classList.remove("navbar__search__active");
-  }
+}
 
  
 
