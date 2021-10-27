@@ -5,7 +5,7 @@ Nautilius theme is based on:
 - Gulp
 - Sass
 - Bootstrap 
-- jQuery
+- jQuery / JS
 - Advance Custom Fields
 - Swup
 - Siema
