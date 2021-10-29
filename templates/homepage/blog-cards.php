@@ -1,7 +1,7 @@
 <section class="blog-cards">
     <div class="container-fluid p-relative">
         <h2 class="section-heading">Blog</h2>
-        <img class="blog-cards__scribbble" src="<?php echo get_template_directory_uri(); ?>/assets/dist/img/svg/scribbbles/61.svg" alt="" title=""/>
+       <!-- <img class="blog-cards__scribbble" src="<?php // echo get_template_directory_uri(); ?>/assets/dist/img/svg/scribbbles/61.svg" alt="" title=""/> -->
         <div class="row justify-content-center">
           <?php
               $args = array(

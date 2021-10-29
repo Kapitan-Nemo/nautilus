@@ -37,7 +37,8 @@ function nautilius_ajax_search() {
 		/* loop through each result */
 		while( $q->have_posts() ) : $q->the_post();
 			/* add result and link to post to output */
-			echo '<li><a onclick="closeSearch()" href="' . get_permalink() . '">' . get_the_title() . '</a></li>';
+			$site_url = get_site_url(); 
+			echo '<li><img class="me-3" src="'.$site_url.'/wp-content/themes/nautilius/assets/dist/img/svg/scribbbles/33.svg" /> <a onclick="closeSearch()" href="' . get_permalink() . '">' . get_the_title() . '</a></li>';
 		
 		/* end loop */
 		endwhile;
