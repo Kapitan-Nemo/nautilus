@@ -1,4 +1,4 @@
-//TODO - REWRITE TO ES5
+//TODO - REWRITE TO ES6
 
 ( function( $ ) {
 	
@@ -25,7 +25,7 @@
 					    if( result === 'error' ) {
 						    
 						    // set the html of the element with the class to no results
-						    $( '.ajax-results' ).html( '<li class="test">Ups...Niczego nie znaleziono :-( </li>' );
+						    $('.ajax-results' ).html( '<li class="test">Ups...Niczego nie znaleziono :-( </li>' );
 					        $('.ajax-results').addClass('active')
 					    // we have results to display
 					    } else {
@@ -33,9 +33,7 @@
 						    $( '.ajax-results' ).html( result );
                             $('.ajax-results').addClass('active')
 					    }
-
-				    }
-				
+				    }	
 			    });
 	        
 	    }
@@ -43,8 +41,8 @@
 	    var thread = null;
 	    
 	    // when the keyboard press is relased in the input with the class ajax-search
-	    $('.ajax-search').keyup(function() {
-			  
+	    $('.ajax-search').keyup(function(event) {
+			  var input = $(this);
 			  // clear our timeout variable - to start the timer again
 			  clearTimeout(thread);
 			  
@@ -52,12 +50,17 @@
 			  var $this = $(this);
               $('.ajax-results').removeClass('active');
 			  
+			  // check if input is empty - prevent search
+			  if( input.val() == "" ) {
+				thread.preventDefault();
+			  } 
+
 			  // set a timeout to wait for a second before running the dosearch function
 			  thread = setTimeout(
 				  function() {
 				  	dosearch($this.val())
 				  },
-				  1000
+				  500
 			  );
 	    });
 	});

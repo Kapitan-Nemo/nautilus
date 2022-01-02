@@ -5,7 +5,7 @@
           <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xxl-3 mb-5 mb-xl-0">
               <div class="event-cards__card">
                       <a href="">
-                        <img width="400" height="300" class="event-cards__img img-fluid" src="<?php echo get_template_directory_uri(); ?>/assets/dist/img/wiosna.png" alt="Wiosna w koszalinie" title="Wiosna w koszalinie" />
+                        <img width="400" height="300" class="event-cards__img img-fluid" src="<?php echo get_template_directory_uri(); ?>/assets/dist/img/png/wiosna.png" alt="Wiosna w koszalinie" title="Wiosna w koszalinie" />
                       </a>  
                   <div class="event-cards__body">
                       <a href="">
@@ -17,7 +17,7 @@
           <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xxl-3 mb-5 mb-xl-0">
               <div class="event-cards__card">
                       <a href="">
-                        <img width="400" height="300" class="event-cards__img img-fluid" src="<?php echo get_template_directory_uri(); ?>/assets/dist/img/lato.png" alt="Lato w koszalinie" title="Lato w koszalinie" />
+                        <img width="400" height="300" class="event-cards__img img-fluid" src="<?php echo get_template_directory_uri(); ?>/assets/dist/img/png/lato.png" alt="Lato w koszalinie" title="Lato w koszalinie" />
                       </a>  
                   <div class="event-cards__body">
                       <a href="">
@@ -29,7 +29,7 @@
           <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xxl-3 mb-5 mb-xl-0">
               <div class="event-cards__card">
                       <a href="">
-                        <img width="400" height="300" class="event-cards__img img-fluid" src="<?php echo get_template_directory_uri(); ?>/assets/dist/img/jesien.png" alt="Jesien w koszalinie" title="Jesien w koszalinie" />
+                        <img width="400" height="300" class="event-cards__img img-fluid" src="<?php echo get_template_directory_uri(); ?>/assets/dist/img/png/jesien.png" alt="Jesien w koszalinie" title="Jesien w koszalinie" />
                       </a>  
                   <div class="event-cards__body">
                       <a href="">
@@ -41,7 +41,7 @@
           <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xxl-3 mb-5 mb-xl-0">
               <div class="event-cards__card">
                       <a href="">
-                        <img width="400" height="300" class="event-cards__img img-fluid" src="<?php echo get_template_directory_uri(); ?>/assets/dist/img/zima.png" alt="Zima w koszalinie" title="Zima w koszalinie" />
+                        <img width="400" height="300" class="event-cards__img img-fluid" src="<?php echo get_template_directory_uri(); ?>/assets/dist/img/png/zima.png" alt="Zima w koszalinie" title="Zima w koszalinie" />
                       </a>  
                   <div  class="event-cards__body">
                       <a href="">

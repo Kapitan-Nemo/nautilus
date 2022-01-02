@@ -7,7 +7,7 @@ get_header(); ?>
             <div class="row">
                 <div class="col-12 page404__container">
                     <h2>Ups... Ta strona nie istnieje</h2>
-                    <img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/assets/dist/img/404.png" width="" height="" alt="404" />
+                    <img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/assets/dist/img/svg/404.svg" width="400" height="" alt="404" />
                 </div>
             </div>
         </div>

@@ -64,8 +64,9 @@ function add_menu_close( $items, $args ) {
 add_filter( 'wp_nav_menu_items','add_menu_image', 10, 2 );
 function add_menu_image( $items, $args ) {
    if( $args->theme_location == 'navigation_mobile' ) {
-        $site_url = get_site_url(); 
-        $items .= '<img width="150" height="150" class="img-fluid" src=" '. $site_url .'/wp-content/uploads/2021/10/droga-removebg-preview-e1634756555105.png" alt="Szukaj" title="Szukaj"  />';
+        $site_url = get_template_directory_uri(); 
+
+        $items .= '<img width="150" height="150" class="img-fluid" src=" '. $site_url .'/assets/dist/img/svg/menu.svg" alt="Menu" title="Menu"  />';
         return $items;
    } else {
     return $items;

@@ -32,9 +32,9 @@ get_header(); ?>
 
                         <?php wp_reset_postdata(); ?>
                 <?php else : ?>
-                    <div class="d-flex search-page">
+                    <div class="search-page">
                         <h2><?php _e( 'Przepraszamy, niczego nie odnaleziono :-(' ); ?></h2>
-                        <img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/assets/dist/img/nie-znaleziono.png" width="" height="" alt="Nie znaleziono" />
+                        <img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/assets/dist/img/svg/nie-znaleziono.svg" width="400" height="" alt="Nie znaleziono" />
                     </div>               
                 <?php endif; ?>
         

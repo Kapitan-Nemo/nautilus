@@ -7,6 +7,9 @@
     }
     h2 {  
         padding: 0 2rem 0 0rem;
+        @include max-lg {
+            padding: 0;
+        }
     }
     margin: 12rem 0 3rem 0!important;
     @include max-lg {

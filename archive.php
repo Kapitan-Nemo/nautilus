@@ -21,7 +21,6 @@ get_header(); ?>
 			} else {
 				$cat = get_the_category($post->ID); echo $cat [0]->cat_name; } ?>
 		</h2>
-		<img class="blog-cards__scribbble" src="<?php echo get_template_directory_uri(); ?>/assets/dist/img/svg/scribbbles/61.svg" alt="" title=""/>
 		<?php if ( is_home() ) {  
 			$total = wp_count_posts()->publish; echo '<p class="blog-cards__category-count justify-content-center d-flex">'. $total . ' posty</p>';
 		} else {

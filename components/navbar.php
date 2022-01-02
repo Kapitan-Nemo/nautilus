@@ -1,6 +1,6 @@
 <div class="navbar container-fluid pt-5 p-relative">
     <a href="<?php echo get_home_url(); ?>">
-        <img class="img-fluid navbar__logo" src="<?php echo get_template_directory_uri(); ?>/assets/dist/img/logo.png" width="157" height="196" alt="Logo Koszalin Dla Dzieci" />
+        <img class="img-fluid navbar__logo" src="<?php echo get_template_directory_uri(); ?>/assets/dist/img/png/logo-koszalin-dla-dzieci.png" width="250" height="" alt="Logo Koszalin Dla Dzieci" />
     </a>
     
     <?php

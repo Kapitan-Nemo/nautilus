@@ -156,7 +156,7 @@
 
     &__nav {
         position: relative;
-        @include min-xxl {
+        @include min-xl {
             &:after {
                 content: "";
                 position: absolute;
@@ -165,7 +165,7 @@
                 width: 0;
                 height: 0;
                 border-top: 34px solid transparent;
-                border-right: 100px solid #f3a183;
+                border-right: 100px solid #F1D8FC;
                 border-bottom: 34px solid transparent;
             }   
         
@@ -183,17 +183,14 @@
         height: 4.25rem;
         width: 45.4375rem;
         border-radius: 0px 50px 50px 0px;
-        box-shadow: 0 3px 6px rgba(235, 176, 180, 0.3);
-        background: linear-gradient(to right,#f3a183,#ec6f66);
-
+        box-shadow: 0px 2px 3px #f1d8fc80;
+        background: linear-gradient(to right,#F1D8FC,#ADCCF6);
         @include max-xl {
             width: 100vw;
             height: 65px;
-            box-shadow: 0 3px 6px rgba(235, 176, 180, 0.3);
             justify-content: center;
             border-radius: 50px;
         }
-        
     }
 
     &__logo {
@@ -226,7 +223,6 @@
             &:before { 
                 color:$secondary;
                 border-radius: 50%;
-                box-shadow: 0 3px 6px rgba(235, 176, 180, 0.45);
                 background-color: $white;
             } 
         }
@@ -237,7 +233,6 @@
             &:before { 
                 color:$secondary;
                 border-radius: 50%;
-                box-shadow: 0 3px 6px rgba(235, 176, 180, 0.45);
                 background-color: $white;
             } 
         }
@@ -286,7 +281,7 @@
         position: relative;
         padding: 0;
         @include min-xl {
-        padding: 0 2.0rem 0 0;
+            padding: 0 2.0rem 0 0;
         } 
         label { 
             &:before { 
@@ -300,7 +295,6 @@
     
     #mobile-menu {
         width: 100%;
-        
         list-style: none;
         position: absolute;
         height: auto;

@@ -4,9 +4,10 @@
         justify-content: center;
         align-items: flex-start;
         flex-flow: column;
-        background: #fbe8de;
+        border: solid 15px #EED8FD;
         border-radius: 5%;
-        padding: 55px;
+        padding: 40px;
+        box-shadow: rgb(149 157 165 / 20%) 0 8px 24px;
         @include max-lg {
             align-items: center;
             text-align: center;
@@ -53,9 +54,9 @@
         width: 16rem;
         transform: rotate(130deg);
         @include max-xxl {
-            bottom: -3rem;
+            bottom: -2.5rem;
             top: unset;
-            width: 110px;
+            width: 100px;
             left: 50%;
             -webkit-transform: translateX(-50%);
             transform: translateX(-50%);  
