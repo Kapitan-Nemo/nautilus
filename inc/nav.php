@@ -36,6 +36,16 @@ function add_menu( $items, $args ) {
    }
 } 
 
+//Add to last position WP Menu  - Facebook link
+add_filter( 'wp_nav_menu_items','add_facebook', 10, 2 );
+function add_facebook( $items, $args ) {
+   if( $args->theme_location == 'navigation' ) {
+        $items .= '<a href="https://www.facebook.com/koszalindladzieci/"><li class="navbar__nav-icon-facebook navbar__nav-icon navbar__nav-item"><label class="nav-facebook" for="nav-facebook-input"></label></li></a>';
+        return $items;
+   } else {
+    return $items;
+   }
+}
 
 //Add to last position WP Menu  - Ajax Search
 add_filter( 'wp_nav_menu_items','add_ajax_search', 10, 2 );

@@ -241,7 +241,6 @@
     &__nav-icon-home {
         font-size: 1.25rem;
         font-variation-settings: "wght" 500;
-        //padding: 0 2.5rem 0 0;
         @include max-xl {
             font-size: 0;
         }
@@ -289,6 +288,32 @@
                 font-family: 'fontello'; 
                 font-size: 1.25rem;
                 padding: 0.5625rem 0.5625rem 0.5625rem 0.5625rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 38px;
+                width: 39px;
+            } 
+        }
+    }
+
+    &__nav-icon-facebook {
+        position: relative;
+        padding: 0;
+        @include min-xl {
+            padding: 0 2.0rem 0 0;
+        } 
+        label { 
+            &:before { 
+                content: '\E81F'; 
+                font-family: 'fontello'; 
+                font-size: 1.25rem;
+                padding: 0.5625rem 0.5625rem 0.5625rem 0.5625rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 38px;
+                width: 39px;
             } 
         }
     }

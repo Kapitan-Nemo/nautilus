@@ -52,7 +52,7 @@
 			  
 			  // check if input is empty - prevent search
 			  if( input.val() == "" ) {
-				thread.preventDefault();
+				return false
 			  } 
 
 			  // set a timeout to wait for a second before running the dosearch function

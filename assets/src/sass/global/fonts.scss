@@ -3,15 +3,7 @@
     src: url(../fonts/Montserrat-VF.woff2) format('woff2-variations');
     font-style: normal;
     font-display: swap;
-  }
-  @font-face {
-    font-family: Montserrat;
-    src: url(../fonts/Montserrat-Italic-VF.woff2) format('woff2-variations');
-    font-style: italic;
-    font-display: swap;
-    /*    ^ only has weight axis (200–900 range) */
-  }
-  
+  }  
   @keyframes Looper {
     from {
         font-variation-settings: "wght" 900;
@@ -122,6 +114,7 @@
 .icon-calendar:before { content: '\e804'; } /* '' */
 .icon-envelope:before { content: '\e805'; } /* '' */
 .icon-facebook:before { content: '\e806'; } /* '' */
+.icon-facebook:before { content: '\E81F'; }
 .icon-instagram:before { content: '\e807'; } /* '' */
 .icon-lock:before { content: '\e808'; } /* '' */
 .icon-phone:before { content: '\e809'; } /* '' */
