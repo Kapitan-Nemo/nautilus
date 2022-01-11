@@ -24,7 +24,7 @@ Template Post Type: page
             <?php if( have_rows('skroty_kafelki', 'option') ): ?>
                 <?php while( have_rows('skroty_kafelki','option') ): the_row(); 
                         $image = get_sub_field('zdjecie'); ?>
-                        <div class="col-12 col-lg-4 mb-lg-5 shortcuts__wrapper">
+                        <div class="col-12 col-lg-4 mb-5 shortcuts__wrapper">
                             <a href="<?php the_sub_field('link'); ?> ">
                                 <div class="shortcuts__box" style="background-color:<?php the_sub_field('kolor'); ?>">
                                     <?php echo wp_get_attachment_image( $image, 'full' ,false, array('title' => '', 'alt' => '', 'class' => 'shortcuts__image')); ?>
