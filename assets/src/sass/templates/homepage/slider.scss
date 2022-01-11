@@ -97,7 +97,7 @@
         font-size: 2.0rem;
         border: 0;
         box-shadow: 0 3px 6px rgba(235, 176, 180, 0.3);
-        background: $primary;
+        background: linear-gradient(to right,#f3a183,#ec6f66);
         margin: 0 10px 0 0;
       }
     
@@ -109,7 +109,7 @@
         font-size: 2.0rem;
         border: 0;
         box-shadow: 0 3px 6px rgba(235, 176, 180, 0.3);
-        background: $primary;
+        background: linear-gradient(to right,#f3a183,#ec6f66);
         margin: 0 0 0 10px;
       }
 }

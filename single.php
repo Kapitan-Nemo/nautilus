@@ -5,7 +5,7 @@
                 <?php
                     if ( function_exists('yoast_breadcrumb') ) {
                         if ( !is_front_page() ) {
-                            yoast_breadcrumb( '<p class="mb-n5" id="breadcrumbs">','</p>' );
+                            yoast_breadcrumb( '<p class="" id="breadcrumbs">','</p>' );
                         }                 
                     }
                 ?>

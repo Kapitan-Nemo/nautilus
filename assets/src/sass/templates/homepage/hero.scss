@@ -26,6 +26,10 @@
         }
     }
 
+    &__subheading {
+        font-variation-settings: 'wght' 400;
+    }
+
     &__image {
         display:flex;
         justify-content: flex-end;

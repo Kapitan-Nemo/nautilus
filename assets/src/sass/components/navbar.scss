@@ -48,7 +48,7 @@
         }
         &__button {
             font-size: 3rem;
-            border-radius: 25px;
+            border-radius: 50%;
             border:none;
             color: #484d8b;
             min-width: 98px;
@@ -299,7 +299,7 @@
 
     &__nav-icon-facebook {
         position: relative;
-        padding: 0;
+        padding: 0 1.2rem 0 0;
         @include min-xl {
             padding: 0 2.0rem 0 0;
         } 
