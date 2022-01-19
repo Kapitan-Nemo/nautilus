@@ -6,7 +6,7 @@ function closeSearch() {
     document.querySelector(".navbar__search").classList.remove("navbar__search__active");
 }
 
-  document.onkeydown = function(evt) {
+document.onkeydown = function(evt) {
     evt = evt || window.event;
     var isEscape = false;
     if ("key" in evt) {
@@ -29,3 +29,11 @@ menuToogle.addEventListener('click', () => {
 function closeMenu() {
   menuMobile.classList.toggle('active');
 }
+        
+    
+   
+
+
+
+
+

@@ -8,7 +8,7 @@ Template Post Type: page
 <?php get_header(); ?>
 <main id="swup" class="transition-fade shortcuts">
     <div class="container-fluid breadcrumbs">
-        <div class="breadcrumbs__row row no-gutters">
+        <div class="breadcrumbs__row row">
             <?php
                 if ( function_exists('yoast_breadcrumb') ) {   
                         yoast_breadcrumb( '<p class="" id="breadcrumbs">','</p>' );              
