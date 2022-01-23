@@ -1,7 +1,7 @@
 <?php get_header(); ?>
     <main id="swup" class="transition-fade blog-single">
         <div class="container-fluid breadcrumbs">
-            <div class="breadcrumbs__row row pt-5">
+            <div class="breadcrumbs__row row">
                 <?php
                     if ( function_exists('yoast_breadcrumb') ) {
                         if ( !is_front_page() ) {

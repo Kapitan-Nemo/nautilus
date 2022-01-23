@@ -1,7 +1,7 @@
 <section class="slider">
     <div class="container-fluid">
         <div class="row">
-        <div class="col-12 p-relative">
+        <div class="col-12 p-relative p-0">
             <h2 class="section-heading">Warte uwagi</h2>
             <img class="slider__scribbble" src="<?php echo get_template_directory_uri(); ?>/assets/dist/img/svg/scribbbles/26.svg" alt="" title=""/>
             <div class="slider__category">  

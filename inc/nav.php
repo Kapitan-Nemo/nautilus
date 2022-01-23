@@ -63,7 +63,7 @@ function add_ajax_search( $items, $args ) {
 add_filter( 'wp_nav_menu_items','add_menu_close', 10, 2 );
 function add_menu_close( $items, $args ) {
    if( $args->theme_location == 'navigation_mobile' ) {
-        $items .= '<i onclick="closeMenu()" class="icon icon-close"></i>';
+        $items .= '<i class="icon icon-close"></i>';
         return $items;
    } else {
     return $items;

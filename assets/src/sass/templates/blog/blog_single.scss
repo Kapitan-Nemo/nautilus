@@ -5,17 +5,16 @@
                 height:auto;
             }
         }
-        .w-100 {
+    .w-100 {
             img {
                 width: 100%;
             }
         }
-        .img-radius { 
+    .img-radius { 
             img {
                 border-radius: 1.25rem;
             }
         }
-    padding: 0 0 3rem 0;
     h2 {
         @include max-lg {
             margin-top: 1rem;
@@ -44,9 +43,6 @@
         padding-top: 1rem;
         &__time {
             color: #483d8b;
-            @include max-lg {
-                max-width: 65vw;
-            }
         }
         &__categories {
             @include max-lg {

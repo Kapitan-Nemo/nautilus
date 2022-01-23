@@ -3,11 +3,6 @@
     justify-content: space-between;
     align-items: center;
     transition: 0.6s ease-out;
-    &.container-fluid {
-        @include max-xl { 
-            padding: 0 10px 0 10px!important;
-        }
-    }
     &__search {
         height: 100%;
         width: 100%;
@@ -153,7 +148,7 @@
             width: 100%;
             margin-right: auto;
             margin-left: auto;
-            padding: 0px 30px 0 30px!important;
+            padding: 0px 15px 0 15px!important;
             max-width: 100%;
         }
     }
@@ -177,8 +172,7 @@
         a {
             color:$white;
             white-space: nowrap;
-        }
-        
+        }   
         list-style-type: none;
         display: flex;
         justify-content: flex-end;
@@ -194,6 +188,7 @@
             height: 65px;
             justify-content: center;
             border-radius: 50px;
+            transition: top 0.3s;
         }
     }
 

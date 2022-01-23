@@ -1,8 +1,5 @@
 .blog-cards {
     margin: 0rem 0 3rem 0;
-    @include max-lg {
-        margin: 0 0 3rem 0;
-    }
     &__scribbble {
         position: absolute;
         top: 6rem;
@@ -81,9 +78,8 @@
     }
     .section-heading {
         text-shadow: -3px 5px 0px black;
-        padding: 3rem 0 6rem 0;
         @include max-xl {
-            padding: 3rem 0 4rem 0;
+            padding: 3rem 0 3rem 0;
             text-shadow: -2px 2px 0px #000;
         }
     }

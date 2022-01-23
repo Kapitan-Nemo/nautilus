@@ -1,8 +1,8 @@
 .slider {
+    margin:9rem 0 0 0px;
     background: #e1eaf4;
-    margin: 12rem 0 3rem 0;
-    @include max-lg {
-        margin: 9rem 0 3rem 0;
+    @include max-xl {
+        margin:0px;
     }
     .container-fluid {
         @include max-xl {

@@ -1,5 +1,4 @@
 #breadcrumbs {
-  padding: 0px; 
   @include max-sm {
     overflow: hidden;
     overflow-x: scroll;
@@ -9,14 +8,6 @@
 
 .front-page .breadcrumbs {
   display: none;
-}
-
-.breadcrumbs {
-  &__row {
-    @include max-xl {
-      padding: 7rem 0 0 0;
-    } 
-  }
 }
 
 .breadcrumb_last {
