@@ -34,7 +34,7 @@ get_header(); ?>
                 <?php else : ?>
                     <div class="search-page">
                         <h2><?php _e( 'Przepraszamy, niczego nie odnaleziono :-(' ); ?></h2>
-                        <img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/assets/dist/img/svg/nie-znaleziono.svg" width="400" height="" alt="Nie znaleziono" />
+                        <img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/assets/dist/img/png/nie-znaleziono.png" width="400" height="" alt="Nie znaleziono" />
                     </div>               
                 <?php endif; ?>
         

@@ -302,7 +302,7 @@
         @include min-xl {
             padding: 0 2.0rem 0 0;
         } 
-        label { 
+        a { 
             &:before { 
                 content: '\E81F'; 
                 font-family: 'fontello'; 
@@ -354,6 +354,7 @@
         img {
             position: absolute;
             width: 150px;
+            height: 150px;
             top: 150px;
             right: 50px;
         }
