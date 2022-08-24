@@ -1,0 +1,30 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	color: $primary;
+	font-weight: unset;
+}
+
+p,
+label {
+	color: $primary;
+}
+
+h1 {
+	font-size: 40px;
+}
+
+h2 {
+	font-size: 60px;
+}
+a {
+	color: $primary;
+}
+
+p {
+	font-size: 20px;
+	color: $secondary;
+}

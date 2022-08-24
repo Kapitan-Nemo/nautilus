@@ -1,0 +1,17 @@
+@import "normalize.css/normalize";
+
+$primary: #000;
+$secondary: #7f8091;
+$white: #fff;
+$red: #ff5555;
+$gray: #292d39;
+$font: "Windows Command Prompt", sans-serif;
+/** Import global files **/
+@import "global/fonts";
+@import "global/mixins";
+@import "global/layout";
+@import "global/typography";
+
+/** Import compontents files **/
+@import "components/header";
+@import "components/footer";

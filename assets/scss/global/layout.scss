@@ -1,0 +1,62 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+*:focus {
+	outline: none !important;
+}
+html {
+	font-size: 16px;
+}
+body {
+	font-family: $font;
+	margin: 0;
+}
+button {
+	border: none;
+	font-family: $font;
+}
+a {
+	text-decoration: none;
+	&:focus {
+		outline: none !important;
+	}
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+input[type="number"] {
+	-moz-appearance: textfield;
+}
+.container {
+	max-width: 1075px;
+	width: 100%;
+	margin: 0 auto;
+	@include max-xxl {
+		padding-right: 30px;
+		padding-left: 30px;
+	}
+	@include max-lg {
+		padding-right: 15px;
+		padding-left: 15px;
+	}
+}
+
+.container-fluid {
+	width: 100%;
+	margin: 0 auto;
+	padding-right: 60px;
+	padding-left: 60px;
+	@include max-xxl {
+		padding-right: 30px;
+		padding-left: 30px;
+	}
+	@include max-lg {
+		padding-right: 15px;
+		padding-left: 15px;
+		margin: 0 0 30px 0;
+	}
+}

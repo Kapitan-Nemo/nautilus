@@ -1,17 +1,10 @@
-<?php
-get_header(); ?>
+<?php get_header() ?>
 
-<main id="swup" class="transition-fade">
-    <section>
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-12">
-                    <h2> <?php echo the_title(); ?></h2>
-                    <?php echo the_content(); ?>
-                </div>
-            </div>
+    <article >
+        <h1><?php the_title() ?></h1>
+        <div>
+            <?php the_content() ?>
         </div>
-    </section>
-</main>
+    </article>
 
-<?php get_footer();
+<?php get_footer() ?>
