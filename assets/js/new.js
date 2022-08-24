@@ -1,5 +1,1 @@
-console.log('terka skurwysyn');
-
-const test = () => {
-	console.log('papaj');
-};
+console.log('new js');
