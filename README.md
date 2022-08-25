@@ -1,5 +1,6 @@
 ## About ##
 <img src="assets/img/nautilus.png" width="100%">
+Wordpress theme - Nautilus.
 Core stripped to the bone:
 -   Remove WP Version from CSS and JS files
 -   Remove WP Version from header
