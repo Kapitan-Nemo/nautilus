@@ -1,3 +1,1 @@
-document.addEventListener('DOMContentLoaded', function () {
-	console.log('js executed...');
-});
+document.addEventListener("DOMContentLoaded",function(){console.log("js executed...")});
