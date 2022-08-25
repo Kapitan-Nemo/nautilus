@@ -1,0 +1,12 @@
+.home {
+	background: #0b0c10;
+}
+.frontpage {
+	min-height: calc(100vh - 356px);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	&__image {
+		max-width: 300px;
+	}
+}

@@ -1,13 +1,14 @@
 .footer {
-	position: absolute;
-	bottom: 0;
 	display: flex;
 	justify-content: center;
+	align-items: center;
 	width: 100%;
-	background: $primary;
+	background: #000;
+	height: 100px;
 	&__mode {
 		&-text {
-			color: red;
+			color: $white;
+			font-size: 30px;
 		}
 	}
 }

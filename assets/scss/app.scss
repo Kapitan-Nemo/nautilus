@@ -5,6 +5,7 @@ $secondary: #7f8091;
 $white: #fff;
 $red: #ff5555;
 $gray: #292d39;
+$black: #000;
 $font: "Windows Command Prompt", sans-serif;
 /** Import global files **/
 @import "global/fonts";
@@ -15,3 +16,4 @@ $font: "Windows Command Prompt", sans-serif;
 /** Import compontents files **/
 @import "components/header";
 @import "components/footer";
+@import "components/frontpage";

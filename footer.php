@@ -1,4 +1,4 @@
-	</main>
+</main>
 
 	<footer class="footer">
 		<div class="footer__mode">
@@ -9,4 +9,3 @@
 <?php wp_footer(); ?>
 </body>
 </html>
-

@@ -43,6 +43,9 @@ input[type="number"] {
 		padding-right: 15px;
 		padding-left: 15px;
 	}
+	&-wrapper {
+		min-height: calc(100vh - 355px);
+	}
 }
 
 .container-fluid {
